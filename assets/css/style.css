@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+input,button,label,textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+/* COMMON */
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1440px;
+    max-width: calc(100% - 50px);
+    margin: 0 auto;
+}
