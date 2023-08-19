@@ -92,8 +92,140 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- STYLE CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- ANIMATION -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
     <body>
-        <p>Hello World</p>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- LOGO -->
+                    <img
+                        src="./assets/img/Logo.svg"
+                        alt=""
+                        class="header__logo"
+                    />
+                    <!-- NAVIGATION -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a
+                                    href="#!"
+                                    class="navbar__link navbar__link-active"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Products</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Features</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- CALL TO ACTION -->
+                    <div class="header__cta-group">
+                        <a href="#!" class="header__cta-login">Log in</a>
+                        <a href="#!" class="btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main style="height: 1000px">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <!-- HERO-CONTENT -->
+                        <section class="hero__content animate__animated animate__fadeInDown">
+                            <span class="hero__caption"
+                                >Digital Smart Wallet</span
+                            >
+                            <h1 class="heading lv1 hero__heading">
+                                Digital
+                                <strong class="hero__heading-strong">
+                                    Payment
+                                </strong>
+                                For Everyone.
+                            </h1>
+                            <p class="desc lv1 hero__desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <form action="" class="hero__form-subscribe">
+                                <input
+                                    type="email"
+                                    name=""
+                                    id=""
+                                    class="hero__input"
+                                    placeholder=""
+                                    required
+                                />
+                                <label for="" class="hero__label">Your email address</label>
+                                <button type="submit" class="btn hero__btn">
+                                    <span class="hero__btn-text"
+                                        >Get Started</span
+                                    >
+                                </button>
+                            </form>
+                            <p class="hero__massage">
+                                *We’ll respect the inbox and never share your
+                                email.
+                            </p>
+                        </section>
+
+                        <!-- HERO-MEDIA -->
+                        <div class="hero__media animate__animated animate__fadeInUp">
+                            <!-- HERO-MOBILE -->
+                            <div class="hero__mobile-wrapper">
+                                <img
+                                    src="./assets/img/hero-mobile.png"
+                                    alt=""
+                                    class="hero__mobile"
+                                />
+                            </div>
+                            <!-- HERO-DEPOSITE -->
+                            <section class="hero__deposite">
+                                <img
+                                    src="./assets/img/hero-deposite.svg"
+                                    alt=""
+                                    class="hero__img-deposite"
+                                />
+                                <h3 class="hero__title-deposite">Deposite</h3>
+                                <span class="hero__money-deposite">$32000</span>
+                            </section>
+                            <!-- HERO-SECURED -->
+                            <div class="hero__secured">
+                                <img
+                                    src="./assets/img/hero-money.svg"
+                                    alt=""
+                                    class="hero__secured-img"
+                                />
+                                <div class="hero__secured-info">
+                                    <strong class="hero__secured-money"
+                                        >$1.310</strong
+                                    >
+                                    <p class="hero__secured-title">
+                                        SECURED FUNDS
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- HERO-INTEREST -->
+                            <div class="hero__interest">
+                                <strong class="hero__interest-data">0%</strong>
+                                <p class="hero__interest-title">Interest</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

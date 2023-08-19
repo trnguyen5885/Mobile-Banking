@@ -12,12 +12,313 @@ input,button,label,textarea {
     font-family: inherit;
     font-size: inherit;
 }
+:root {
+    --primary-color:#7264D6;
+}
 /* COMMON */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    --height-:52px;
+    width: 113px;
+    height: var(--height-);
+    border-radius: 6px;
+    background: #212832;
+    color: #fff;
+}
 a {
     text-decoration: none;
 }
+.heading.lv1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #212832;
+}
+.heading.lv2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+    color: #070052;
+}
+.heading.lv3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+    color: #0A142F;
+}
+.desc {
+    font-weight: 400;
+    color: #696D76;
+}
+.desc.lv1 {
+    font-size: 1.8rem;
+    line-height: 1.66;   
+}
+.desc.lv2 {
+    color: #696D76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
 .container {
-    width: 1440px;
+    width: 1170px;
     max-width: calc(100% - 50px);
     margin: 0 auto;
+}
+/*  HEADER  */
+.header {
+    margin-top: 42px;
+    background-color: #fff;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+.navbar__list {
+    display: flex;
+    margin-left: 70px;
+}
+.navbar__link, 
+.header__cta-login {
+    position: relative;
+    padding: 10px 23px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #696D76;
+}
+.navbar__link-active {
+    text-shadow: 1px 0 0 #212832;
+}
+.navbar__link-active::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 23px;
+    bottom: 5px;
+    width: 50px;
+    height: 1px;
+    border-radius: 1px;
+    background-color:#7264D6;
+}
+.header__cta-group {
+    margin-left: auto;
+}
+.header__cta-login {
+    color: #212832;;
+}
+/*  HERO  */
+.hero {
+    padding: 76px 0;
+}
+.hero__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+.hero__content {
+    width: 46%;
+}
+.hero__caption {
+    display:inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #696D77;
+    padding-left: 24px;
+}
+.hero__caption::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    left: 0;
+    bottom: 12px;
+    background: #696D77;
+}
+.hero__heading {
+    width: 390px;
+    margin: 12px 0 20px;
+}
+.hero__heading-strong {
+    color: var(--primary-color);
+}
+.hero__form-subscribe {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 20px;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+.hero__input {
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    padding: 0 22px;
+    outline: none;
+    border: none;
+    color: #212832;
+}
+.hero__input:focus {
+    border: 1px solid var(--primary-color) ;
+    outline: var(--primary-color);
+}
+.hero__input:focus + .hero__label,
+.hero__input:not(:placeholder-shown) + .hero__label{
+    transform: translateY(-38px);
+    color: var(--primary-color);
+    text-shadow: -0.1px -0.1px currentColor, 0.1px 0.1px currentColor;
+    opacity: 1;
+}
+.hero__input::placeholder {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; 
+    color: #696D76;
+}
+.hero__label {
+    position: absolute;
+    flex-shrink: 0;
+    padding: 0 5px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; 
+    opacity: 0.5;
+    left: 23px;
+    pointer-events: none;
+    background-color: #FFF;
+    transition: transform , color , opacity , text-shadow;
+    transition-duration: .5s;
+}
+.hero__btn {
+    position: relative;
+    --height-:58px;
+    margin-right: 8px;
+    min-width: 149px;
+    border: none;
+    cursor: pointer;
+}
+.hero__btn::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    transition: width .5s ease;
+}
+.hero__btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+.hero__btn-text {
+    position: relative;
+    z-index: 1;
+}
+.hero__massage {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+    color: #696D76;
+}
+.hero__media {
+    position: relative;
+}
+.hero__mobile-wrapper {
+    margin-left: 100px;
+    width: 296px;
+    height: 562px;
+}
+.hero__mobile {
+    display: block;
+    width: 100%;
+    object-fit: cover ;
+}
+.hero__deposite {
+    position: absolute;
+    left: 0;
+    top: 113px;
+    display: flex;
+    align-items: center;
+    max-width: 174px;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+.hero__title-deposite {
+    margin: 0 19px 0 8px;
+    color: #31456A;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.hero__money-deposite {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #4AB5E3;
+}
+.hero__secured {
+    position: absolute;
+    right: -75px;
+    bottom: 61px;
+    display: flex;
+    align-items: center;
+    padding: 20px 14px;
+    max-width: 124px;
+    border-radius: 10px;
+    background: #439F90;
+}
+.hero__secured-info {
+    margin-left: 11px;
+}
+.hero__secured-money {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #FFF;
+}
+.hero__secured-title {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #FFF;
+}
+.hero__interest {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: -190px;
+    top: 140px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #DA6464;
+}
+.hero__interest-data {
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: #FFF;
+}
+.hero__interest-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #FFF;
 }
