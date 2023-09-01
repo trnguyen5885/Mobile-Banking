@@ -145,7 +145,7 @@
                     <div class="hero__inner">
                         <!-- HERO-CONTENT -->
                         <section
-                            class="hero__content animate__animated animate__fadeInDown"
+                            class="hero__content animate__animated animate__fadeInDown animate__delay-1s"
                         >
                             <span class="caption">Digital Smart Wallet</span>
                             <h1 class="heading special hero__heading">
@@ -186,7 +186,7 @@
 
                         <!-- HERO-MEDIA -->
                         <div
-                            class="hero__media animate__animated animate__fadeInUp"
+                            class="hero__media animate__animated animate__fadeInUp animate__delay-1s"
                         >
                             <!-- HERO-MOBILE -->
                             <div class="hero__mobile-wrapper">
@@ -232,7 +232,7 @@
                 </div>
             </section>
             <!-- WORKS -->
-            <section class="works">
+            <section class="works wow animate__animated animate__fadeInLeft animate__delay-1s" data-wow-offset="-5">
                 <div class="container">
                     <div class="works__inner">
                         <!-- MEDIA -->
@@ -313,7 +313,7 @@
                 </div>
             </section>
             <!-- CARD -->
-            <section class="card">
+            <section class="card wow animate__animated animate__fadeInRight animate__delay-1s" data-wow-offset="-5">
                 <div class="container">
                     <div class="card__inner">
                         <!-- CARD-CONTENT -->
@@ -397,7 +397,7 @@
                 </div>
             </section>
             <!-- SERVICE -->
-            <section class="service">
+            <section class="service wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-offset="-5">
                 <div class="container">
                     <div class="service__inner">
                         <!-- SERVICE-MEDIA -->
@@ -507,7 +507,7 @@
                 </div>
             </section>
             <!-- FEEDBACK -->
-            <section class="feedback">
+            <section class="feedback wow animate__animated animate__fadeInDown animate__delay-1s" data-wow-offset="-5">
                 <div class="container">
                     <div class="feedback__top">
                         <span class="caption">Our Testimonial</span>
@@ -652,7 +652,7 @@
                 </div>
             </section>
             <!-- BLOG -->
-            <section class="blog">
+            <section class="blog wow animate__animated animate__fadeIn animate__delay-1s" data-wow-offset="-5">
                 <div class="container">
                     <!-- BLOG-TOP -->
                     <section class="blog__top">
@@ -766,7 +766,7 @@
                 </div>
             </section>
             <!-- APPS -->
-            <section class="app">
+            <section class="app wow animate__animated animate__fadeIn animate__delay-1s" data-wow-offset="-5">
                 <div class="container">
                     <div class="app__inner">
                         <section class="app__top">
@@ -905,7 +905,18 @@
             </div>
         </footer>
         <div class="copyright">
-            <p class="copyright__text">© 2020 Ligft Media All rights reserved.</p>
+            <p class="copyright__text">
+                © 2020 Ligft Media All rights reserved.
+            </p>
         </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
